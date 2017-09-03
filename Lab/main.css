@@ -1,0 +1,75 @@
+.bt {
+    position: absolute;
+    top: 60px;
+    padding: 0;
+    background: #ddd;
+    border-radius: 15px;
+    border: 1px solid gray;
+    font-size: 24px;
+    line-height: 24px;
+    color: #444;
+    width: 50px;
+    height: 400px;
+    display: block;
+}
+
+.bt:focus {
+    outline: none;
+}
+
+.bt:hover {
+    background: #ccc;
+    cursor: pointer;
+}
+
+#prev {
+    left: 20px;
+    z-index: 1;
+}
+
+#next {
+    right: 20px;
+    z-index: 1;
+}
+
+#slider,
+#slider2 {
+    width: 9999px;
+    left: 0;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    transition: all ease 1s;
+    /* position: relative; */
+}
+
+#slider2 {
+    height: 9999px;
+    top: 390px;
+    left: 435px;
+    z-index: 3;
+    position: absolute;
+}
+
+#slider2 img {
+    width: 40px;
+    opacity: 0.3;
+}
+
+#carusel {
+    overflow: hidden;
+    width: 433px;
+    border: 3px solid #FF5E00;
+    margin: 50px auto;
+}
+
+#slider img {
+    /* height: 50vh; */
+    width: 433px;
+    float: left;
+}
+
+#carusel::after {
+    content: "";
+    display: block;
+    clear: both;
+}
